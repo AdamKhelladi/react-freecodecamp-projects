@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/Accordion/Accordion';
+import RandomColorGenerator from './components/RandomColorGenerator/RandomColorGenerator';
 
 function App() {
   return (
@@ -7,6 +8,10 @@ function App() {
       {/* Accordion Component */}
       <Accordion />
       {/* Accordion Component */}
+
+      {/* RandomColorGenerator Component */}
+      <RandomColorGenerator />
+      {/* RandomColorGenerator Component */}
 
     </div>
   );
