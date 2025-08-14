@@ -7,3 +7,25 @@
   align-items: center;
   text-align: center;
 }
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.item {
+  background-color: #222;
+  border-radius: 24px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  width: 500px;
+  user-select: none;
+  cursor: pointer;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 800;
+}

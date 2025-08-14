@@ -11,9 +11,9 @@ Covers beginner to advanced concepts, including components, hooks, props, state 
 - Follows modern React best practices
 
 ## 📂 Projects Included
-1. **Project Name 1** – Short description
-2. **Project Name 2** – Short description
-3. **Project Name 3** – Short description  
+1. **Accordion** – Short description
+2. **Random Color Generator** – Short description
+3. **Star Rating** – Short description  
 (*Add more as you complete them.*)
 
 ## 🛠️ Tech Stack
