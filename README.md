@@ -14,6 +14,7 @@ Covers beginner to advanced concepts, including components, hooks, props, state 
 1. **Accordion** – Short description
 2. **Random Color Generator** – Short description
 3. **Star Rating** – Short description  
+3. **Image Slider** – Short description  
 (*Add more as you complete them.*)
 
 ## 🛠️ Tech Stack
