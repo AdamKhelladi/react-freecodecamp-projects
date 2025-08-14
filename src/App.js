@@ -7,11 +7,9 @@ function App() {
     <div className="App">
       {/* Accordion Component */}
       <Accordion />
-      {/* Accordion Component */}
 
       {/* RandomColorGenerator Component */}
       <RandomColorGenerator />
-      {/* RandomColorGenerator Component */}
 
     </div>
   );
