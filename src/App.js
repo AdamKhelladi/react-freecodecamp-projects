@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/Accordion/Accordion';
 import RandomColorGenerator from './components/RandomColorGenerator/RandomColorGenerator';
+import StarRating from './components/StarRating/StarRating';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
 
       {/* RandomColorGenerator Component */}
       <RandomColorGenerator />
+
+      {/* StarRating Component */}
+      <StarRating />
 
     </div>
   );
