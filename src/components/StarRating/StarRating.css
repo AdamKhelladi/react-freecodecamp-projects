@@ -10,10 +10,10 @@
   align-items: center;
 }
 
-.star {
-  font-size: 30px;
-  transition: .3s;
-}
-/* .star:hover {
+.active {
   color: rgb(255, 217, 0);
-} */
+}
+
+.disactive {
+  color: #ccc;
+}
