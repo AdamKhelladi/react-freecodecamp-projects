@@ -31,10 +31,10 @@
 }
 
 .arrow-left {
-  left: 20px;
+  left: 80px;
 }
 .arrow-right {
-  right: 20px;
+  right: 80px;
 }
 
 .circle-indicators {
@@ -55,7 +55,7 @@
 }
 
 .hide-current-indicator {
-  background-color: #888;
+  background-color: #555;
 
 }
 
