@@ -53,7 +53,7 @@ export default function ImageSlider({ url, page, limit }) {
   }
 
   return (
-    <div className="image-slider">
+    <div className="the-image-slider">
       <BsArrowLeftCircleFill
         className="the-arrow arrow-left"
         onClick={() => {
