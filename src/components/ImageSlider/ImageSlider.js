@@ -55,7 +55,7 @@ export default function ImageSlider({ url, page, limit }) {
   return (
     <div className="image-slider">
       <BsArrowLeftCircleFill
-        className="arrow arrow-left"
+        className="the-arrow arrow-left"
         onClick={() => {
           handlePrevios();
         }}
@@ -75,7 +75,7 @@ export default function ImageSlider({ url, page, limit }) {
           ))
         : null}
       <BsArrowRightCircleFill
-        className="arrow arrow-right"
+        className="the-arrow arrow-right"
         onClick={() => {
           handleNext();
         }}
@@ -88,8 +88,8 @@ export default function ImageSlider({ url, page, limit }) {
                 key={index}
                 className={
                   currentSlide === index
-                    ? "current-indicator"
-                    : "current-indicator hide-current-indicator"
+                    ? "the-current-indicator"
+                    : "the-current-indicator hide-the-current-indicator"
                 }
                 onClick={() => setCurrentSlide(index)}
               ></button>

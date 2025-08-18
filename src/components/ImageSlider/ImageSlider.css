@@ -19,7 +19,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.arrow {
+.the-arrow {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -27,7 +27,7 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.arrow:hover {
+.the-arrow:hover {
   color: #ccc;
 }
 
@@ -45,7 +45,7 @@
   gap: 5px;
 }
 
-.current-indicator {
+.the-current-indicator {
   background-color: #ccc;
   width: 20px;
   height: 20px;
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.hide-current-indicator {
+.hide-the-current-indicator {
   background-color: #555;
 }
 
