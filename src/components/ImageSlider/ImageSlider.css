@@ -14,20 +14,21 @@
 .current-img {
   border-radius: 24px;
   box-shadow: 0 0 10px #555;
-  width: 600px;
+  width: 500px;
   height: 500px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .arrow {
   position: absolute;
   width: 50px;
   height: 50px;
-  color: #888;
+  color: #fbb600;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .arrow:hover {
-  color: #ccc;
+  color: #fbb800a9;
 }
 
 .arrow-left {
@@ -45,7 +46,7 @@
 }
 
 .current-indicator {
-  background-color: #ccc;
+  background-color: #fbb600;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -55,10 +56,21 @@
 }
 
 .hide-current-indicator {
-  background-color: #555;
-
+  background-color: #ccc;
 }
 
 .hide-current-img {
   display: none;
+}
+
+.title {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fbb600;
+  color: #000019;
+  padding: 5px 24px;
+  font-size: 30px;
+  font-weight: 800;
 }

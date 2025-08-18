@@ -2,7 +2,8 @@ import './App.css';
 import Accordion from './components/Accordion/Accordion';
 import RandomColorGenerator from './components/RandomColorGenerator/RandomColorGenerator';
 import StarRating from './components/StarRating/StarRating';
-import ImageSlider from './components/ImageSlider/ImageSlider';
+// import ImageSlider from './components/ImageSlider/ImageSlider';
+import NewImageSlider from "./components/ImageSlider/NewImageSlider"
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <StarRating />
 
       {/* ImageSlider Component */}
-      <ImageSlider url={"https://picsum.photos/v2/list"} page={"3"} limit={"5"} />
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"3"} limit={"5"} /> */}
+      <NewImageSlider />
 
     </div>
   );
