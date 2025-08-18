@@ -1,4 +1,4 @@
-/* .image-slider {
+.image-slider {
   position: relative;
   color: #111;
   background-color: #222;
@@ -63,7 +63,7 @@
   display: none;
 }
 
-.title {
+.post-title {
   position: absolute;
   top: 6%;
   left: 50%;
@@ -73,4 +73,4 @@
   padding: 5px 24px;
   font-size: 30px;
   font-weight: 800;
-} */
+}
