@@ -1,4 +1,4 @@
-.image-slider {
+/* .image-slider {
   position: relative;
   color: #111;
   background-color: #222;
@@ -23,12 +23,12 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  color: #888;
+  color: #fbb600;
   cursor: pointer;
   transition: 0.3s;
 }
 .arrow:hover {
-  color: #ccc;
+  color: #fbb800a9;
 }
 
 .arrow-left {
@@ -46,7 +46,7 @@
 }
 
 .current-indicator {
-  background-color: #ccc;
+  background-color: #fbb600;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -56,10 +56,21 @@
 }
 
 .hide-current-indicator {
-  background-color: #555;
+  background-color: #ccc;
 }
 
 .hide-current-img {
   display: none;
 }
 
+.title {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fbb600;
+  color: #000019;
+  padding: 5px 24px;
+  font-size: 30px;
+  font-weight: 800;
+} */
