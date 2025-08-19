@@ -4,6 +4,7 @@ import RandomColorGenerator from './components/RandomColorGenerator/RandomColorG
 import StarRating from './components/StarRating/StarRating';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import NewImageSlider from "./components/NewImageSlider/NewImageSlider"
+import LoadMoreButton from './components/LoadMoreButton/LoadMoreButton';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
 
       {/* NewImageSlider Component */}
       <NewImageSlider />
+
+      {/* LoadMoreButton Component */}
+      <LoadMoreButton/>
 
     </div>
   );
