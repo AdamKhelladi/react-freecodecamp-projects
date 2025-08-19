@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import "./LoadMoreButton.css";
 
 export default function LoadMoreButton() {
-  const [count, SetCount] = useState(0);
-  const [dataProducts, setProducts] = useState([]);
+  const [count, setCount] = useState(-1);
   const [loading, setLoading] = useState(false);
+  const [dataProducts, setProducts] = useState([]);
+  const [total, setTotal] = useState(0);
 
   async function fetchProducts() {
     try {
@@ -18,7 +19,8 @@ export default function LoadMoreButton() {
       const data = await response.json();
 
       if (data && data.products && data.products.length) {
-        setProducts(data);
+        setProducts((prevData) => [...prevData, ...data.products]);
+        setTotal(data.total);
         setLoading(false);
       }
     } catch (error) {
@@ -27,9 +29,16 @@ export default function LoadMoreButton() {
     }
   }
 
+  // First Reload
   useEffect(() => {
-    fetchProducts();
+    setCount(0);
   }, []);
+
+  useEffect(() => {
+    if (count >= 0) {
+      fetchProducts();
+    }
+  }, [count]);
 
   if (loading) {
     return (
@@ -40,18 +49,16 @@ export default function LoadMoreButton() {
   }
 
   function handleLoadMoreBtnClick() {
-    SetCount(count + 1);
-    fetchProducts()
-    console.log(count);
+    setCount(count + 1);
   }
 
   return (
     <div className="load-more">
-      <h1>Total products: {dataProducts.total}</h1>
+      <h1>Total products: {total}</h1>
 
       <div className="content">
-        {dataProducts.products && dataProducts.products.length
-          ? dataProducts.products.map((product, index) => (
+        {dataProducts && dataProducts.length
+          ? dataProducts.map((product, index) => (
               <div className="product" key={index}>
                 <span className="price">{product.price}$</span>
                 <h2>{product.title}</h2>
@@ -61,9 +68,14 @@ export default function LoadMoreButton() {
             ))
           : null}
       </div>
-      <button className="load-more-btn" onClick={() => {
-        handleLoadMoreBtnClick();
-      }}>Load More Products</button>
+      <button
+        className="load-more-btn"
+        onClick={() => {
+          handleLoadMoreBtnClick();
+        }}
+      >
+        Load More Products
+      </button>
     </div>
   );
 }

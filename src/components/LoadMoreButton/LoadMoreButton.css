@@ -49,6 +49,7 @@ h1 {
 
 .content .product img {
   width: 200px;
+  margin-bottom: 20px;
 }
 
 .content .product .buy-now-btn {
