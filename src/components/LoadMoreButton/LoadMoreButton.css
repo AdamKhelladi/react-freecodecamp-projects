@@ -102,8 +102,6 @@ h1 {
   display: block;
   margin: 20px auto;
   padding: 8px 16px;
-  background-color: #ccc;
-  color: #111;
   outline: none;
   font-size: 20px;
   font-weight: 700;
@@ -111,9 +109,16 @@ h1 {
   cursor: pointer;
   transition: 0.3s;
   border: 2px solid #ccc;
+  background-color: #ccc;
 }
-.load-more-btn:hover {
+.load-more-btn:hover:not(:disabled) {
   background-color: #222;
   border: 2px solid #ccc;
   color: #ccc;
+}
+.load-more-btn:disabled {
+  background-color: #444;
+  border-color: #444;
+  color: #111;
+  cursor: not-allowed;
 }

@@ -4,8 +4,9 @@ import "./LoadMoreButton.css";
 export default function LoadMoreButton() {
   const [count, setCount] = useState(-1);
   const [loading, setLoading] = useState(false);
-  const [dataProducts, setProducts] = useState([]);
+  const [dataProducts, setDataProducts] = useState([]);
   const [total, setTotal] = useState(0);
+  const [disableButton, setDisableButton] = useState(false);
 
   async function fetchProducts() {
     try {
@@ -19,7 +20,7 @@ export default function LoadMoreButton() {
       const data = await response.json();
 
       if (data && data.products && data.products.length) {
-        setProducts((prevData) => [...prevData, ...data.products]);
+        setDataProducts((prevData) => [...prevData, ...data.products]);
         setTotal(data.total);
         setLoading(false);
       }
@@ -39,6 +40,12 @@ export default function LoadMoreButton() {
       fetchProducts();
     }
   }, [count]);
+
+  useEffect(() => {
+    if (dataProducts && dataProducts.length === 100) {
+      setDisableButton(true);
+    }
+  }, [dataProducts]);
 
   if (loading) {
     return (
@@ -70,6 +77,7 @@ export default function LoadMoreButton() {
       </div>
       <button
         className="load-more-btn"
+        disabled={disableButton}
         onClick={() => {
           handleLoadMoreBtnClick();
         }}
