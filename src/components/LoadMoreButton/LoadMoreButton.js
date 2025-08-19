@@ -84,6 +84,9 @@ export default function LoadMoreButton() {
       >
         Load More Products
       </button>
+      {
+        disableButton ? <p className="disableMsg">You have reached to 100 products</p> : null
+      }
     </div>
   );
 }
