@@ -1,7 +1,5 @@
 import "./TreeView.css";
 
-export default function TreeView() {
-  return (
-    <div className="tree-view"></div>
-  )
+export default function TreeView({ manus = [] }) {
+  return <div className="tree-view"></div>;
 }
