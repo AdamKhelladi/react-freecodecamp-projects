@@ -7,6 +7,7 @@ import NewImageSlider from "./components/NewImageSlider/NewImageSlider"
 import LoadMoreButton from './components/LoadMoreButton/LoadMoreButton';
 import Introduction from './components/Introduction/Introduction';
 import TreeView from './components/TreeView/TreeView';
+import menus from './components/TreeView/manus';
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
       <LoadMoreButton/>
 
       {/* TreeView Component */}
-      <TreeView />
+      <TreeView manus={menus}/>
 
     </div>
   );
