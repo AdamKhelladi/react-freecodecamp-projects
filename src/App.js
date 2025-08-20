@@ -5,10 +5,14 @@ import StarRating from './components/StarRating/StarRating';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import NewImageSlider from "./components/NewImageSlider/NewImageSlider"
 import LoadMoreButton from './components/LoadMoreButton/LoadMoreButton';
+import Introduction from './components/Introduction/Introduction';
 
 function App() {
   return (
     <div className="App">
+      {/* Introduction Component */}
+      <Introduction />
+
       {/* Accordion Component */}
       <Accordion />
 
