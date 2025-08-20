@@ -6,6 +6,7 @@ import ImageSlider from './components/ImageSlider/ImageSlider';
 import NewImageSlider from "./components/NewImageSlider/NewImageSlider"
 import LoadMoreButton from './components/LoadMoreButton/LoadMoreButton';
 import Introduction from './components/Introduction/Introduction';
+import TreeView from './components/TreeView/TreeView';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
 
       {/* LoadMoreButton Component */}
       <LoadMoreButton/>
+
+      {/* TreeView Component */}
+      <TreeView />
 
     </div>
   );
