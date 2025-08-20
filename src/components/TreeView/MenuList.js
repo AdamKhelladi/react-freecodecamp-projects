@@ -1,15 +1,16 @@
 import MenuItem from "./MenuItem"
 
 export default function MenuList({ list = [] }) {
+  // console.log(list);
   return (
-    <div className="menu-list">
+    <ul className="menu-list">
       {
         list && list.length ? 
-        list.map((listItem) => (
-          <MenuItem item={listItem}/>
+        list.map((listItem, index) => (
+          <MenuItem key={index} item={listItem}/>
         ))
         : null
       }
-    </div>
+    </ul>
   )
 }
