@@ -8,6 +8,7 @@ import LoadMoreButton from './components/LoadMoreButton/LoadMoreButton';
 import Introduction from './components/Introduction/Introduction';
 import TreeView from './components/TreeView/TreeView';
 import menus from './components/TreeView/manus';
+import QRCodeGenerator from './components/QRCodeGenerator/QRCodeGenerator';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
 
       {/* TreeView Component */}
       <TreeView manus={menus}/>
+
+      {/* QRCodeGenerator Component */}
+      <QRCodeGenerator />
 
     </div>
   );
