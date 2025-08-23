@@ -8,7 +8,7 @@ export default function ThemeSwitch() {
     setTheme(theme === "dark" ? "light" : "dark")
   }
 
-  console.log(theme);
+  // console.log(theme);
 
   return (
     <div className="theme-switch" data-theme={theme}>
