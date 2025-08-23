@@ -10,6 +10,7 @@ import TreeView from './components/TreeView/TreeView';
 import menus from './components/TreeView/manus';
 import QRCodeGenerator from './components/QRCodeGenerator/QRCodeGenerator';
 import ThemeSwitch from './components/ThemeSwitch/ThemeSwitch';
+import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
 
       {/* ThemeSwitch Component */}
       <ThemeSwitch />
+
+      {/* ScrollIndicator Component */}
+      <ScrollIndicator />
 
     </div>
   );

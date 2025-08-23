@@ -1,0 +1,10 @@
+.scroll-indicator {
+  background-color: #111;
+  color: #ccc;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
