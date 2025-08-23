@@ -23,48 +23,38 @@ export default function ScrollIndicator({ url }) {
     }
   }
 
-  function handleScrollPercentage() {
-    console.log(
-      document.body.scrollTop,
-      document.documentElement.scrollTop,
-      document.documentElement.scrollHeight,
-      document.documentElement.clientHeight
-    );
-
-    const howMuchScrolled = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-    setScrollPercentage((howMuchScrolled/height)*100);
+  function handleScroll(e) {
+    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
+    const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    setScrollPercentage(scrolled);
   }
 
   useEffect(() => {
     fetchData(url);
   }, [url]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrollPercentage);
-
-    return () => {
-      window.removeEventListener("scroll", () => {});
-    };
-  }, []);
-
-  console.log(scrollPercentage);
-
   if (loading) {
     <div>
-      <h2>Loading Data, Please Wait !</h2>
+      <h2 style={{color: "#ccc"}}>Loading Data, Please Wait !</h2>
     </div>;
   }
 
   return (
-    <div className="scroll-indicator">
+    <div
+      className="scroll-indicator"
+      onScroll={(e) => {
+        handleScroll(e);
+      }}
+    >
       <div className="scroll-bar-container">
-        <div className="scroll-bar-progress"></div>
+        <div
+          style={{ width: `${scrollPercentage}%` }}
+          className="scroll-bar-progress"
+        ></div>
       </div>
 
       <h1 className="scroll-title">Scroll Indicator</h1>
-      <div style={{width: `${scrollPercentage}px`}} className="data-contianer">
+      <div className="data-contianer">
         {data && data.length > 0
           ? data.map((dataItem, index) => (
               <p key={index} className="item-title">
