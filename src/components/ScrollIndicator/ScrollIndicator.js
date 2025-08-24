@@ -13,7 +13,7 @@ export default function ScrollIndicator({ url }) {
       const response = await fetch(getUrl);
       const data = await response.json();
 
-      console.log(data.products);
+      // console.log(data.products);
       if (data && data.products && data.products.length) {
         setData(data.products);
         setLoading(false);
