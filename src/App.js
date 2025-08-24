@@ -11,6 +11,7 @@ import menus from "./components/TreeView/manus";
 import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
 
       {/* ScrollIndicator Component */}
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+
+      {/* Tabs Component */}
+      <Tabs />
     </div>
   );
 }
