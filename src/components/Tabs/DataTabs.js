@@ -8,10 +8,10 @@
             fontSize: "18px",
             color: "#fff",
             backgroundColor: "#00424b",
-            borderRadius: "16px",
+            borderRadius: "24px",
           }}
         >
-          🏠 Welcome to the Home tab!
+          🏠 Welcome to the Home tab! 
         </div>
       ),
     },
@@ -22,7 +22,7 @@
           style={{
             padding: "20px",
             backgroundColor: "#00424b",
-            borderRadius: "16px",
+            borderRadius: "24px",
             color: "#eee",
           }}
         >
@@ -47,7 +47,7 @@
           style={{
             padding: "20px",
             backgroundColor: "#00424b",
-            borderRadius: "16px",
+            borderRadius: "24px",
             color: "#ccc",
           }}
         >
@@ -93,7 +93,7 @@
             fontStyle: "italic",
             color: "#ccc",
             backgroundColor: "#00424b",
-            borderRadius: "16px",
+            borderRadius: "24px",
           }}
         >
           ℹ️ This is a simple tab component styled with a dark theme.
