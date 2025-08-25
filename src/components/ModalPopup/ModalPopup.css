@@ -35,6 +35,9 @@
   width: 600px;
   height: 400px;
   transition: 0.5s;
+
+  animation-name: animationModal;
+  animation-duration: .5s;
 }
 
 .close-modal-btn {
@@ -53,4 +56,16 @@
 }
 .close-modal-btn:hover {
   background-color: #610000;
+}
+
+
+@keyframes animationModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
