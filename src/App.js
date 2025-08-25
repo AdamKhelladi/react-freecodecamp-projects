@@ -13,6 +13,7 @@ import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import Tabs from "./components/Tabs/Tabs";
 import ModalPopup from "./components/ModalPopup/ModalPopup";
+import GithubProfileFinder from "./components/GithubProfileFinder/GithubProfileFinder";
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
 
       {/* ModalPopup Component */}
       <ModalPopup />
+
+      {/* GithubProfileFinder Component */}
+      <GithubProfileFinder />
     </div>
   );
 }
