@@ -1,12 +1,37 @@
 .modal-popup-container {
-  background-color: #0d0024;
+  background-color: #0a001b;
   color: #fff;
   max-width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   gap: 10px;
   text-align: center;
+}
+
+.modal-popup-btn {
+  border: none;
+  outline: none;
+  margin-top: 100px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  background-color: #320088;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+.modal-popup-btn:hover {
+  background-color: #240061;
+}
+
+.box-modal {
+  margin-top: 20px;
+  background-color: #32008831;
+  border-radius: 24px;
+  padding: 20px;
+  width: 600px;
+  height: 400px;
+  transition: .5s;
 }
