@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.modal-popup-btn {
+.open-modal-btn {
   border: none;
   outline: none;
   margin-top: 100px;
@@ -20,18 +20,37 @@
   background-color: #320088;
   color: #fff;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.modal-popup-btn:hover {
+.open-modal-btn:hover {
   background-color: #240061;
 }
 
 .box-modal {
-  margin-top: 20px;
+  position: relative;
+  margin-top: 100px;
   background-color: #3200881f;
   border-radius: 24px;
   padding: 20px;
   width: 600px;
   height: 400px;
-  transition: .5s;
+  transition: 0.5s;
+}
+
+.close-modal-btn {
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  padding: 8px 16px;
+  background-color: #880000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-modal-btn:hover {
+  background-color: #610000;
 }
