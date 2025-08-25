@@ -12,6 +12,7 @@ import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import Tabs from "./components/Tabs/Tabs";
+import ModalPopup from "./components/ModalPopup/ModalPopup";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
 
       {/* Tabs Component */}
       <Tabs />
+
+      {/* ModalPopup Component */}
+      <ModalPopup />
     </div>
   );
 }
