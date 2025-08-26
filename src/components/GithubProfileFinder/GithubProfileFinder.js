@@ -8,7 +8,8 @@ export default function GithubProfileFinder() {
   const [loading, setLoading] = useState(false);
 
   function handleClickSearch() {
-    console.log(username);
+    fetchGithubUserData();
+    setUsername("");
   }
 
   function handleChangeInput(CurrentInputUsername) {
@@ -32,7 +33,7 @@ export default function GithubProfileFinder() {
   }, []);
 
   if (loading) {
-    return <h3>Loading Data, Please Wait !</h3>
+    return <h3>Loading Data, Please Wait !</h3>;
   }
 
   return (
@@ -49,6 +50,7 @@ export default function GithubProfileFinder() {
         />
         <button
           className="search-btn"
+          disabled={!username}
           onClick={() => {
             handleClickSearch();
           }}
@@ -57,9 +59,7 @@ export default function GithubProfileFinder() {
         </button>
       </div>
 
-      {userData && userData.length > 0 ? (
-        <UserProfile user={userData}/>
-      ) : null}
+      {userData !== null ? <UserProfile user={userData} /> : null}
     </div>
   );
 }
