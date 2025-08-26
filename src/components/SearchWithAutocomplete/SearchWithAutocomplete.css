@@ -60,3 +60,26 @@
 .the-input-wrapper .search-btn:hover:disabled {
   background-color: #00072c;
 }
+
+.autocomplete-container .results {
+  width: 370px;
+  background: #00072c75;
+  margin-top: 16px;
+  border-radius: 24px;
+  padding: 10px;
+  margin-left: -105px;
+}
+
+.autocomplete-container .results p {
+  padding: 5px;
+  margin: 0;
+  color: #ccc;
+  cursor: pointer;
+}
+.autocomplete-container .results p:not(:last-child) {
+  border-bottom: 1px solid #00106b;
+  padding-bottom: 10px;
+}
+.autocomplete-container .results p:not(:first-child) {
+  padding-top: 10px;
+}

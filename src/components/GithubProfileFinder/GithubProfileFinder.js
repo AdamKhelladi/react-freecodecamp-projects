@@ -23,7 +23,7 @@ export default function GithubProfileFinder() {
 
     if (data) {
       setUserData(data);
-      console.log(data);
+      // console.log(data);
       setLoading(false);
     }
   }
@@ -33,7 +33,7 @@ export default function GithubProfileFinder() {
   }, []);
 
   if (loading) {
-    return <h3>Loading Data, Please Wait !</h3>;
+    return <h3 style={{color: "#fff", textAlign: "center", height: "100%"}}>Loading Data, Please Wait !</h3>;
   }
 
   return (
