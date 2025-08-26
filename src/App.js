@@ -14,6 +14,7 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import Tabs from "./components/Tabs/Tabs";
 import ModalPopup from "./components/ModalPopup/ModalPopup";
 import GithubProfileFinder from "./components/GithubProfileFinder/GithubProfileFinder";
+import SearchWithAutocomplete from "./components/SearchWithAutocomplete/SearchWithAutocomplete";
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
 
       {/* GithubProfileFinder Component */}
       <GithubProfileFinder />
+
+      {/* SearchWithAutocomplete Component */}
+      <SearchWithAutocomplete />
     </div>
   );
 }
