@@ -32,6 +32,9 @@
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 50px;
+  color: #fff;
+  user-select: none;
 }
 .tictactoe-container .row .square:hover {
   background-color: #00293d;
