@@ -15,6 +15,7 @@ import Tabs from "./components/Tabs/Tabs";
 import ModalPopup from "./components/ModalPopup/ModalPopup";
 import GithubProfileFinder from "./components/GithubProfileFinder/GithubProfileFinder";
 import SearchWithAutocomplete from "./components/SearchWithAutocomplete/SearchWithAutocomplete";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
 
       {/* SearchWithAutocomplete Component */}
       <SearchWithAutocomplete />
+
+      {/* TicTacToe Component */}
+      <TicTacToe />
     </div>
   );
 }
