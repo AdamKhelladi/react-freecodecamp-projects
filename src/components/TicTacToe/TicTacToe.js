@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./TicTacToe.css";
 
 function Square({ value, onClick }) {
@@ -8,7 +8,6 @@ function Square({ value, onClick }) {
       onClick={() => {
         onClick();
       }}
-      disabled={value ? true : false}
     >
       {value}
     </button>
@@ -18,17 +17,61 @@ function Square({ value, onClick }) {
 export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(""));
   const [isXTurn, setIsXTurn] = useState(true);
-  console.log(squares);
+  const [status, setStatus] = useState("");
 
   function handleClickSquare(currentSquare) {
     let copySquares = [...squares];
+
+    if (getWinner(copySquares) || copySquares[currentSquare]) return;
+
     copySquares[currentSquare] = isXTurn ? "X" : "O";
     setIsXTurn(!isXTurn);
     // console.log(copySquares);
 
     setSquares(copySquares);
-    console.log(squares);
+    // console.log(squares);
   }
+
+  function getWinner(squares) {
+    const winningPatterns = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+
+    for (let i = 0; i < winningPatterns.length; i++) {
+      const [a, b, c] = winningPatterns[i];
+
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
+        return squares[a];
+      }
+    }
+    return null;
+  }
+
+  function handleRestart() {
+    setIsXTurn(true);
+    setSquares(Array(9).fill(""));
+  }
+
+  useEffect(() => {
+    if (!getWinner(squares) && squares.every((item) => item !== "")) {
+      setStatus("This is a draw ! Please restart the game.");
+    } else if (getWinner(squares)) {
+      setStatus(`Winner is ${getWinner(squares)}, restart the game`);
+    } else {
+      setStatus(`Next player is ${isXTurn ? "X" : "O"}`);
+    }
+  }, [squares, isXTurn]);
 
   return (
     <div className="tictactoe-container">
@@ -92,6 +135,17 @@ export default function TicTacToe() {
             handleClickSquare(8);
           }}
         />
+      </div>
+      <div className="result">
+        <p>{status}</p>
+        <button
+          className="restart"
+          onClick={() => {
+            handleRestart();
+          }}
+        >
+          Restart the game
+        </button>
       </div>
     </div>
   );

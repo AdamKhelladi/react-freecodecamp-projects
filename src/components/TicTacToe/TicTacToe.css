@@ -39,3 +39,33 @@
 .tictactoe-container .row .square:hover {
   background-color: #00293d;
 }
+
+.tictactoe-container p {
+  color: "#fff";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tictactoe-container .restart {
+  outline: none;
+  padding: 8px 16px;
+  background-color: #001f2e;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+  border-radius: 24px;
+}
+.tictactoe-container .restart:hover {
+  background-color: #005c8a;
+}
+/* .tictactoe-container .restart:disabled {
+  cursor: not-allowed;
+}
+.tictactoe-container .restart:hover:disabled {
+  background-color: #001f2e;
+} */
