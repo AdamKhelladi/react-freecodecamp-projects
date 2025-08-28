@@ -16,6 +16,7 @@ import ModalPopup from "./components/ModalPopup/ModalPopup";
 import GithubProfileFinder from "./components/GithubProfileFinder/GithubProfileFinder";
 import SearchWithAutocomplete from "./components/SearchWithAutocomplete/SearchWithAutocomplete";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
+import FeatureFlag from "./components/FeatureFlag/FeatureFlag";
 
 function App() {
   return (
@@ -71,6 +72,9 @@ function App() {
 
       {/* TicTacToe Component */}
       <TicTacToe />
+
+      {/* FeatureFlag Component */}
+      <FeatureFlag />
     </div>
   );
 }
