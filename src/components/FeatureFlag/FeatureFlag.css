@@ -9,3 +9,8 @@
   flex-direction: column;
   text-align: center;
 }
+
+.feature-flag-container h1 {
+  background-color: #003620;
+  user-select: none;
+}

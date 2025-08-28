@@ -17,6 +17,7 @@ import GithubProfileFinder from "./components/GithubProfileFinder/GithubProfileF
 import SearchWithAutocomplete from "./components/SearchWithAutocomplete/SearchWithAutocomplete";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import FeatureFlag from "./components/FeatureFlag/FeatureFlag";
+import FeatureFlagGlobalState from "./components/FeatureFlag/context";
 
 function App() {
   return (
@@ -74,7 +75,9 @@ function App() {
       <TicTacToe />
 
       {/* FeatureFlag Component */}
-      <FeatureFlag />
+      <FeatureFlagGlobalState>
+        <FeatureFlag />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
