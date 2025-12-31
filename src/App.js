@@ -34,17 +34,17 @@ function App() {
       {/* StarRating component */}
       <StarRating />
 
-      {/* ImageSlider Component */}
+      {/* ImageSlider component */}
       <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"2"}
         limit={"5"}
       />
 
-      {/* NewImageSlider Component */}
+      {/* NewImageSlider component */}
       <NewImageSlider />
 
-      {/* LoadMoreButton Component */}
+      {/* LoadMoreButton component */}
       <LoadMoreButton />
 
       {/* TreeView Component */}
