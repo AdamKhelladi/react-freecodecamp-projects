@@ -28,10 +28,10 @@ function App() {
       {/* Accordion component */}
       <Accordion />
 
-      {/* RandomColorGenerator Component */}
+      {/* RandomColorGenerator component */}
       <RandomColorGenerator />
 
-      {/* StarRating Component */}
+      {/* StarRating component */}
       <StarRating />
 
       {/* ImageSlider Component */}
