@@ -25,7 +25,7 @@ function App() {
       {/* Introduction component */}
       <Introduction />
 
-      {/* Accordion Component */}
+      {/* Accordion component */}
       <Accordion />
 
       {/* RandomColorGenerator Component */}
