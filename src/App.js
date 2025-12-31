@@ -50,10 +50,10 @@ function App() {
       {/* TreeView Component */}
       <TreeView manus={menus} />
 
-      {/* QRCodeGenerator Component */}
+      {/* QRCodeGenerator component */}
       <QRCodeGenerator />
 
-      {/* ThemeSwitch Component */}
+      {/* ThemeSwitch component */}
       <ThemeSwitch />
 
       {/* ScrollIndicator Component */}
