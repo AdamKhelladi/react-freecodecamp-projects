@@ -22,7 +22,7 @@ import FeatureFlagGlobalState from "./components/FeatureFlag/context";
 function App() {
   return (
     <div className="App">
-      {/* Introduction component */}
+      {/* Introduction Component */}
       <Introduction />
 
       {/* Accordion component */}
