@@ -71,7 +71,7 @@ function App() {
       {/* SearchWithAutocomplete Component */}
       <SearchWithAutocomplete />
 
-      {/* TicTacToe component */}
+      {/* TicTacToe Component */}
       <TicTacToe />
 
       {/* FeatureFlag Component */}
