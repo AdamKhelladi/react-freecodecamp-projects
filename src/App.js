@@ -74,7 +74,7 @@ function App() {
       {/* TicTacToe component */}
       <TicTacToe />
 
-      {/* FeatureFlag component */}
+      {/* FeatureFlag Component */}
       <FeatureFlagGlobalState>
         <FeatureFlag />
       </FeatureFlagGlobalState>
