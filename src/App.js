@@ -31,7 +31,7 @@ function App() {
       {/* RandomColorGenerator component */}
       <RandomColorGenerator />
 
-      {/* StarRating component */}
+      {/* StarRating Component */}
       <StarRating />
 
       {/* ImageSlider component */}
