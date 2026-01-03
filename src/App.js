@@ -41,7 +41,7 @@ function App() {
         limit={"5"}
       />
 
-      {/* NewImageSlider component */}
+      {/* NewImageSlider Component */}
       <NewImageSlider />
 
       {/* LoadMoreButton component */}
