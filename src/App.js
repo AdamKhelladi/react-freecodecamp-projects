@@ -34,7 +34,7 @@ function App() {
       {/* StarRating Component */}
       <StarRating />
 
-      {/* ImageSlider component */}
+      {/* ImageSlider Component */}
       <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"2"}
