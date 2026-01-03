@@ -25,10 +25,10 @@ function App() {
       {/* Introduction Component */}
       <Introduction />
 
-      {/* Accordion component */}
+      {/* Accordion Component */}
       <Accordion />
 
-      {/* RandomColorGenerator component */}
+      {/* RandomColorGenerator Component */}
       <RandomColorGenerator />
 
       {/* StarRating Component */}
